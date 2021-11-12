@@ -13,8 +13,8 @@ Map<String, dynamic> _writeToJsonMap(_FieldSet fs, {bool useInserStm = false}) {
     }
 
     switch (baseType) {
-      case 2097152:
-        return jsonEncode((fieldValue as Struct)..toProto3Json());
+      // case 2097152:
+      //   return jsonEncode((fieldValue as Struct)..toProto3Json());
       case PbFieldType._BOOL_BIT:
       // case PbFieldType._STRING_BIT:
       case PbFieldType._FLOAT_BIT:
