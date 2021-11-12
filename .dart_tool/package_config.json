@@ -170,6 +170,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "proto_shared",
+      "rootUri": "file:///Users/albinsonarias/.pub-cache/git/proto_shared-f37216ce6514358e59ec9949ee98ce22b1ca7a76/",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "pub_semver",
       "rootUri": "file:///Users/albinsonarias/.pub-cache/hosted/pub.dartlang.org/pub_semver-2.0.0",
       "packageUri": "lib/",
@@ -302,7 +308,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-11-12T14:47:29.428952Z",
+  "generated": "2021-11-12T16:23:52.384139Z",
   "generator": "pub",
   "generatorVersion": "2.14.4"
 }
