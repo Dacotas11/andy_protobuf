@@ -11,6 +11,7 @@ import 'dart:math' as math;
 import 'dart:typed_data' show TypedData, Uint8List, ByteData, Endian;
 
 import 'package:fixnum/fixnum.dart' show Int64;
+import 'package:protobuf/google/protobuf/struct.pb.dart';
 import 'package:protobuf/src/protobuf/timestamp.pb.dart';
 
 import 'src/protobuf/json_parsing_context.dart';
