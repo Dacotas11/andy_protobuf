@@ -15,11 +15,12 @@ Map<String, dynamic> _writeToJsonMap(_FieldSet fs, {bool useInserStm = false}) {
     switch (baseType) {
       case 2097152:
         if (fieldValue is Struct) {
-          return jsonEncode(fieldValue..toProto3Json());
+          final item = fieldValue as Struct;
+          final jsonString = jsonEncode(item.toProto3Json());
+          return useInserStm ? '\'$jsonString\'' : jsonString;
+        } else {
+          return fieldValue.writeToJsonMap(useInserStm: useInserStm);
         }
-        continue sigue;
-
-      sigue:
       case PbFieldType._BOOL_BIT:
       // case PbFieldType._STRING_BIT:
       case PbFieldType._FLOAT_BIT:
