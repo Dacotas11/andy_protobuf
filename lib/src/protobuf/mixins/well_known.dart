@@ -250,12 +250,10 @@ abstract class TimestampMixin {
       var timestamp = message as TimestampMixin;
       setFromDateTime(timestamp, dateTimeWithoutFractionalSeconds);
       timestamp.nanos = nanos;
-    } else if (json is DateTime){
-
-
-    }
-    
-    else {
+    } else if (json is DateTime) {
+      var timestamp = message as TimestampMixin;
+      setFromDateTime(timestamp, json);
+    } else {
       throw context.parseException(
           'Expected timestamp represented as String', json);
     }
